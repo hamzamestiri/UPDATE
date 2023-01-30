@@ -1,0 +1,86 @@
+
+body{
+    background-color: whitesmoke;
+}
+#detail{
+    display: flex;
+    margin-top: 30px;
+}
+#detail .single-img{
+    width: 30%;
+    margin-right: 100px;
+}
+.small-img-grp{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img{
+    flex-basis: 30%;
+    cursor: pointer;
+    
+}
+.small-img img{
+    background-size: cover;
+    display: flex;
+}
+#detail .prod-detail{
+    width: 50%;
+    padding-top: 30px;
+}
+#detail .prod-detail h6{
+    font-size: 30px;
+    color: black;
+}
+#detail .prod-detail h4{
+    padding: 40px 0 20px 0;
+    color: blue;
+}
+#detail .prod-detail h2{
+    font-size: 24px;
+    font-weight: 800;
+}
+#detail .prod-detail select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#detail .prod-detail input{
+    width: 50px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+#detail .prod-detail button{
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.6s;
+}
+#detail .prod-detail button:hover{
+    background-color: white;
+    color: blue;
+    border-color: black 2px;
+}
+
+@media (max-width:477px){
+    #detail{
+        display: flex;
+        flex-direction: column;
+    }
+    #detail .single-img{
+        width: 100%;
+        margin-top: 0;
+    }
+    #detail .prod-detail{
+        width: 100%;
+    }
+    .box {
+        width: 100%;
+        justify-content: center;
+    }
+}

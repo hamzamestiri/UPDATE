@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="sproduct.css">
+    <title>9ACHECH</title>
+</head>
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">9ACHECH</a>
+		<div>
+        <ul  id='nav-bar'>
+            <li><a  href="index.html">Home</a></li>
+            <li><a  class="active" href="shop.html">Shop</a></li> 
+            <li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a id="cart" href="cart.html"><i class='bx bx-cart'></i></a></li>
+			<a  id="close"><i class='bx bx-x'></i></a>
+
+		</ul>
+		</div>
+		<div class='mobile'>
+			<a href="cart.html"><i class='bx bx-cart'></a></i>
+			<i id='bar' class='bx bx-menu'></i>
+		</div>
+
+
+    </header>
+    <section id="detail">
+        <div class="single-img">
+            <img src="image1.jpg" width="100%" id="main-Img">
+            <div class="small-img-grp">
+                <div class="small-img">
+                    <img src="image2.jpg" width="100%" class="mini-img" alt="">
+                </div>
+                <div class="small-img">
+                    <img src="image3.jpg" width="100%" class="mini-img" alt="">
+                </div>
+                <div class="small-img">
+                    <img src="image4.jpg" width="100%" class="mini-img" alt="">
+                </div>
+                <div class="small-img">
+                    <img src="image5.jpg" width="100%" class="mini-img" alt="">
+                </div>
+                <div class="small-img">
+                    <img src="image6.jpg" width="100%" class="mini-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="prod-detail">
+            <h6>GAP</h6>
+            <h4>Man's Hoodies</h4>
+            <h2>$15.00</h2>
+            <select>
+                <option value="">Select Size</option>
+                <option value="">XL</option>
+                <option value="">XXL</option>
+                <option value="">Small</option>
+                <option value="">Large</option>
+            </select>
+            <input type="number" value="1">
+            <button>Add To Cart</button>
+            <h4>Product Details</h4>
+            <span><ul>
+                <li>Soft knit.</li>
+                <li>This hoodie is made with 23% recycled polyester. Less waste in the world. More great clothes for you.</li>
+                <li>Long sleeves.</li>
+                <li>Hooded neckline with drawcords.</li>
+                <li>Navy colored Gap logo applique at front for Baltic Blue, New Off White, Gold Pendant, and Medium Heather Gray colors.</li>
+            </ul></span>
+        </div>   
+    </section>
+    <section class="shop">
+        <div id="description">
+			<h1>Featured Products</h1>
+			<p>Gap Hoodies</p>
+        </div>
+        <div class="container">
+            <div class="box">
+                <img src="image1.jpg" alt="">
+                <h4>I'm a product</h4>
+				<h5>$15.00</h5>
+				<div class="cart">
+					<a href="#"><i class='bx bx-cart' ></i></a>
+				</div>
+            </div>
+            <div class="box">
+				<img src="image2.jpg">
+				<h4>I'm a product</h4>
+				<h5>$15.00</h5>
+				<div class="cart">
+					<a href="#"><i class='bx bx-cart' ></i></a>
+				</div>
+			</div>
+            <div class="box">
+				<img src="image3.jpg">
+				<h4>I'm a product</h4>
+				<h5>$15.00</h5>
+				<div class="cart">
+					<a href="#"><i class='bx bx-cart' ></i></a>
+				</div>
+			</div>
+            <div class="box">
+				<img src="image4.jpg">
+				<h4>I'm a product</h4>
+				<h5>$15.00</h5>
+				<div class="cart">
+					<a href="#"><i class='bx bx-cart' ></i></a>
+				</div>
+			</div>
+            <div class="box">
+				<img src="image5.jpg">
+				<h4>I'm a product</h4>
+				<h5>$15.00</h5>
+				<div class="cart">
+					<a href="#"><i class='bx bx-cart' ></i></a>
+				</div>
+			</div>
+            <div class="box">
+				<img src="image6.jpg">
+				<h4>I'm a product</h4>
+				<h5>$15.00</h5>
+				<div class="cart">
+					<a href="#"><i class='bx bx-cart' ></i></a>
+				</div>
+			</div>
+
+        </div>
+    </section> 
+    <script>
+        var singleimg = document.getElementById('main-Img');
+        var miniImg = document.getElementsByClassName('mini-img');
+
+        miniImg[0].onclick = function(){
+            singleimg.src = miniImg[0].src;
+        }
+        miniImg[1].onclick = function(){
+            singleimg.src = miniImg[1].src;
+        }
+
+        miniImg[2].onclick = function(){
+            singleimg.src = miniImg[2].src;
+        }
+        miniImg[3].onclick = function(){
+            singleimg.src = miniImg[3].src;
+        }
+        miniImg[4].onclick = function(){
+            singleimg.src = miniImg[4].src;
+        }
+    </script>       
+    <script src="script.js"></script>   
+    
+</body>
+</html>

@@ -1,0 +1,134 @@
+#banner .banner-box{
+    background-image:linear-gradient(rgba(22, 22, 22, 0.8),rgba(19, 18, 18, 0.8)), url("images/shoes-banner.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    min-width: 580px;
+    background-position:  right 60%;
+
+    align-items: flex-start;
+    height: 40vh;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+}
+#main-home{
+    background-image: url("hero-banner.jpg");
+    width: 100%;
+    height: 40vh;
+    background-position:  bottom 80% left 80%;
+    background-size: cover;
+}
+#main-home h2{
+    font-size: 40px;
+    color: black;
+    
+}
+#main-home span{
+    color:blue;
+}
+#banner .banner-box h4{
+    font-size: 60px;
+    color: white;
+    font-weight: 800;
+    margin-left: 10%;
+}
+.description h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+.description p{
+    text-align: center;
+    color: blue;
+    font-size: larger;
+}
+@media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+@media (max-width:630px){
+    .main-text h1{
+        font-size: 50px;
+        transition: .4s;
+    }
+    .main-text p{
+        font-size: 18px;
+        transition: .4s;
+    }
+    .main-btn{
+        padding: 10px 20px;
+        transition: .4s;
+    }
+}
+	
+@media (max-width:799px){
+    #nav-bar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+        padding: 80px 0 0 10px;
+    }
+    #nav-bar.active{
+        right: 0px;
+    }
+    #nav-bar li{
+        margin-bottom: 25px;
+    }
+    .mobile{
+        display: flex;
+        align-items: center;
+    }
+    .mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    #cart{
+        display: none;
+    }
+    #banner .banner-box{
+        display: none;
+    }
+    #banner2 .banner-box{
+        display: flex;
+        flex-direction: column;
+    }
+    #banner2 .banner-box h2{
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+    }
+    #feature{
+        justify-content: center;
+    }
+    #shop .container{
+        width: 100%;
+        justify-content: center;
+    }
+    #banner .container{
+        width: 100%;
+        justify-content: center;
+    }
+}
